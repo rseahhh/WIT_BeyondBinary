@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>aria</title>
+  <style>
+    body { font-family: system-ui; padding: 12px; }
+    input, button { padding: 10px; }
+    input { width: 100%; box-sizing: border-box; margin: 8px 0; }
+    .row { display: flex; gap: 8px; }
+    .row button { flex: 1; }
+    #log { margin-top: 10px; font-size: 13px; line-height: 1.35; }
+  </style>
+</head>
+<body>
+  <h3>aria</h3>
+  <input id="cmd" placeholder='try "search youtube football" or "play 1"' />
+  <div class="row">
+    <button id="send">send</button>
+    <button id="voice">🎙 voice</button>
+  </div>
+  <div id="log"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
